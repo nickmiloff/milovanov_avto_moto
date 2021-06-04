@@ -56,7 +56,7 @@ Gallery.propTypes = {
     big: PropTypes.string.isRequired,
     small: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired
-  }))
+  })).isRequired
 };
 
 export default Gallery;
