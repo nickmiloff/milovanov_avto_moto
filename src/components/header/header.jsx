@@ -4,7 +4,7 @@ import logoImg from '../../assets/img/logo.svg';
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="page__header header">
       <div className="container">
         <a className="header__logo logo" href="/">
           <img className="logo__img" src={logoImg} alt="Логотип интернет-магазина - Avto-Moto" width="134" height="55" />

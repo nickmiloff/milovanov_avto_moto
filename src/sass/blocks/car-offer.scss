@@ -1,0 +1,10 @@
+.car-offer {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 90px;
+}
+
+.car-offer__gallery--new .gallery__img-container::before {
+  content: "new model";
+}
