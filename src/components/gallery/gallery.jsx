@@ -33,7 +33,7 @@ const Gallery = ({
         </button>
         <ul className="gallery__previews-list">
           {
-            photos.map((el) => <GalleryPreview key={el.id} {...el} />)
+            photos.map((el, index) => <GalleryPreview key={`gallery-photo-${index}`} {...el} />)
           }
         </ul>
         <button
@@ -55,8 +55,7 @@ Gallery.propTypes = {
   photos: PropTypes.arrayOf(PropTypes.shape({
     big: PropTypes.string.isRequired,
     small: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired
+    alt: PropTypes.string.isRequired
   }))
 };
 

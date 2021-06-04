@@ -1,11 +1,23 @@
 export const offerDescription = {
   title: `Марпех 11`,
-  configuration: {
-    fuelType: `Бензин`,
-    gearbox: `механика`,
-    enginePower: 100,
-    engineDisplacement: 1.4
-  },
+  configuration: [
+    {
+      type: `fuel`,
+      value: `Бензин`
+    },
+    {
+      type: `gearbox`,
+      value: `механика`
+    },
+    {
+      type: `power`,
+      value: `100 л.с.`
+    },
+    {
+      type: `displacement`,
+      value: `1.4 л`
+    }
+  ],
   price: {
     old: 2400000,
     new: 2300000,
@@ -29,20 +41,17 @@ export const offerImages = [
   {
     big: `./img/car-1.jpg`,
     small: `./img/car-1-min.jpg`,
-    alt: `Фотография внешнего вида автомобиля`,
-    id: `9886b763`
+    alt: `Фотография внешнего вида автомобиля`
   },
   {
     big: `./img/car-2.jpg`,
     small: `./img/car-2-min.jpg`,
-    alt: `Фотография салона автомобиля`,
-    id: `f1680617`
+    alt: `Фотография салона автомобиля`
   },
   {
     big: `./img/car-3.jpg`,
     small: `./img/car-3-min.jpg`,
-    alt: `Фотография приборной панели автомобиля`,
-    id: `83ceebd0`
+    alt: `Фотография приборной панели автомобиля`
   }
 ];
 
