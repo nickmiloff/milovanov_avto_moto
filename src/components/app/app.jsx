@@ -1,10 +1,12 @@
 import React from 'react';
 
+import Header from '../header/header';
+
 const App = () => {
   return (
-    <>
-      <h1>Страница автомобилей - Avto-Moto</h1>
-    </>
+    <div className="page">
+      <Header />
+    </div>
   );
 };
 
