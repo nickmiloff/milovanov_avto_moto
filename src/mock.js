@@ -25,17 +25,36 @@ export const offerDescription = {
   }
 };
 
-export const offerСharacteristics = {
-  transmission: `Роботизированная`,
-  engineType: `Бензиновый`,
-  traction: `Полный`,
-  engineDisplacement: 2.4,
-  torque: {
-    nm: 370,
-    rpm: 4500
+export const offerСharacteristics = [
+  {
+    type: `Трансмиссия`,
+    value: `Роботизированная`
   },
-  cylinders: 4
-};
+  {
+    type: `Мощность двигателя, л.с.`,
+    value: `249`
+  },
+  {
+    type: `Тип двигателя`,
+    value: `Бензиновый`
+  },
+  {
+    type: `Привод`,
+    value: `Полный`
+  },
+  {
+    type: `Объем двигателя, л`,
+    value: `2.4`
+  },
+  {
+    type: `Макс. крутящий момент`,
+    value: `370/4500`
+  },
+  {
+    type: `Количество цилиндров`,
+    value: `4`
+  }
+];
 
 export const offerImages = [
   {
