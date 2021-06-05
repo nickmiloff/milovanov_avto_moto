@@ -5,7 +5,7 @@ import GalleryPreview from '../gallery-preview/gallery-preview';
 
 const Gallery = ({
   additionalClass = ``,
-  photos = []
+  photos
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const bigPicture = photos[currentSlide];

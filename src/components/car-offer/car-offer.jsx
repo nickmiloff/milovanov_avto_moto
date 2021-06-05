@@ -5,8 +5,9 @@ import OfferInfo from '../offer-info/offer-info';
 import Tabs from '../tabs/tabs';
 
 import Characteristics from '../characteristics/characteristics';
+import Reviews from '../reviews/reviews';
 
-import {offerImages, offerDescription, offerСharacteristics} from '../../mock';
+import {offerImages, offerDescription, offerСharacteristics, offerReviews} from '../../mock';
 
 const TITLES = [
   `Характеристики`,
@@ -22,7 +23,7 @@ const CarOffer = () => {
         <OfferInfo {...offerDescription} />
         <Tabs additionalClass="car-offer__tabs" titles={TITLES}>
           <Characteristics items={offerСharacteristics} />
-          <span>Отзывы</span>
+          <Reviews items={offerReviews} />
           <span>Контакты</span>
         </Tabs>
       </div>
