@@ -1,11 +1,11 @@
-.main-nav__list {
+.nav__list {
   display: flex;
   gap: 68px;
 
   list-style: none;
 }
 
-.main-nav__link {
+.nav__link {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -23,4 +23,9 @@
     color: $basic-red;
     opacity: 0.6;
   }
+}
+
+.nav--secondary .nav__list {
+  gap: unset;
+  justify-content: space-between;
 }
