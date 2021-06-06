@@ -1,4 +1,5 @@
 import React from 'react';
+import GoogleMap from '../map/map';
 
 const Contacts = () => {
   return (
@@ -30,9 +31,7 @@ const Contacts = () => {
           </a>
         </li>
       </ul>
-      <div className="contacts__map">
-
-      </div>
+      <GoogleMap additionalClass="contacts__map" />
     </div>
   );
 };
