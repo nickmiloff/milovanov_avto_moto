@@ -1,4 +1,4 @@
-import React, {useReducer} from 'react';
+import React, {useState} from 'react';
 
 import Gallery from '../gallery/gallery';
 import OfferInfo from '../offer-info/offer-info';
@@ -7,9 +7,6 @@ import Tabs from '../tabs/tabs';
 import Characteristics from '../characteristics/characteristics';
 import Reviews from '../reviews/reviews';
 import Contacts from '../contacts/contacts';
-
-import reducer from './reducer/reducer';
-import * as actions from './reducer/actions';
 
 import {offerImages, offerDescription, offerСharacteristics, offerReviews} from '../../mock';
 
@@ -20,10 +17,13 @@ const TITLES = [
 ];
 
 const CarOffer = () => {
-  const [state, dispatch] = useReducer(reducer, {reviews: [...offerReviews]});
+  const [reviews, setReviews] = useState([...offerReviews]);
 
   const onReviewAdd = (review) => {
-    dispatch(actions.addReview(review));
+    setReviews((prevReviews) => [
+      review,
+      ...prevReviews
+    ]);
   };
 
   return (
@@ -34,7 +34,7 @@ const CarOffer = () => {
         <Tabs additionalClass="car-offer__tabs" titles={TITLES}>
           <Characteristics items={offerСharacteristics} />
           <Reviews
-            items={state.reviews}
+            items={reviews}
             onReviewAdd={onReviewAdd}
           />
           <Contacts />
