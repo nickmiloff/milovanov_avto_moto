@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useReducer} from 'react';
 
 import Gallery from '../gallery/gallery';
 import OfferInfo from '../offer-info/offer-info';
@@ -7,6 +7,9 @@ import Tabs from '../tabs/tabs';
 import Characteristics from '../characteristics/characteristics';
 import Reviews from '../reviews/reviews';
 import Contacts from '../contacts/contacts';
+
+import reducer from './reducer';
+import * as actions from './actions';
 
 import {offerImages, offerDescription, offerСharacteristics, offerReviews} from '../../mock';
 
@@ -17,6 +20,12 @@ const TITLES = [
 ];
 
 const CarOffer = () => {
+  const [state, dispatch] = useReducer(reducer, {reviews: [...offerReviews]});
+
+  const onReviewAdd = (review) => {
+    dispatch(actions.addReview(review));
+  };
+
   return (
     <section className="car-offer">
       <div className="container">
@@ -24,7 +33,10 @@ const CarOffer = () => {
         <OfferInfo {...offerDescription} />
         <Tabs additionalClass="car-offer__tabs" titles={TITLES}>
           <Characteristics items={offerСharacteristics} />
-          <Reviews items={offerReviews} />
+          <Reviews
+            items={state.reviews}
+            onReviewAdd={onReviewAdd}
+          />
           <Contacts />
         </Tabs>
       </div>

@@ -6,9 +6,15 @@ import ReviewsForm from '../reviews-form/reviews-form';
 import Modal from '../modal/modal';
 
 const Reviews = ({
-  items
+  items,
+  onReviewAdd
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const onFormSubmit = (data) => {
+    onReviewAdd(data);
+    setIsModalOpen(() => false);
+  };
 
   return (
     <div className="reviews">
@@ -34,9 +40,7 @@ const Reviews = ({
         }}
       >
         <ReviewsForm
-          onSubmit={() => {
-            setIsModalOpen(() => false);
-          }}
+          onSubmit={onFormSubmit}
         />
       </Modal>
     </div>
@@ -44,7 +48,8 @@ const Reviews = ({
 };
 
 Reviews.propTypes = {
-  items: PropTypes.array.isRequired
+  items: PropTypes.array.isRequired,
+  onReviewAdd: PropTypes.func.isRequired
 };
 
 export default Reviews;

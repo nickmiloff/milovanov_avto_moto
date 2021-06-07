@@ -15,12 +15,16 @@ const ReviewsForm = ({
   const onFormSubmit = (evt) => {
     evt.preventDefault();
 
+    const now = new Date();
+    now.setSeconds(now.getSeconds() - 1);
+
     const data = {
-      name,
+      author: name,
       advantages,
       disadvantages,
       comment,
-      rating
+      rating,
+      posted: now.toISOString()
     };
 
     localStorage.setItem(`name`, name);

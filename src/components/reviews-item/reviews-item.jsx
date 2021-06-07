@@ -46,7 +46,7 @@ const ReviewsItem = ({
   advantages,
   disadvantages,
   comment,
-  rate,
+  rating,
   posted
 }) => {
   return (
@@ -80,7 +80,7 @@ const ReviewsItem = ({
           </p>
         </li>
       </ul>
-      <Rating additionalClass="reviews__rating" value={rate} />
+      <Rating additionalClass="reviews__rating" value={rating} />
       <div className="reviews__footer">
         <span className="reviews__posted">{getPostedText(posted)}</span>
         <a href="" className="reviews__reply-link">Ответить</a>
@@ -94,8 +94,8 @@ ReviewsItem.propTypes = {
   advantages: PropTypes.string.isRequired,
   disadvantages: PropTypes.string.isRequired,
   comment: PropTypes.string.isRequired,
-  rate: PropTypes.number.isRequired,
+  rating: PropTypes.number.isRequired,
   posted: PropTypes.string.isRequired
 };
 
-export default ReviewsItem;
+export default React.memo(ReviewsItem);
