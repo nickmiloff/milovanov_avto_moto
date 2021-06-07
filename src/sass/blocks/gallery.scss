@@ -46,7 +46,7 @@
   width: 52px;
   height: 52px;
 
-  border: 1px solid $special-gray;
+  border: 1px solid $special-grey;
   border-radius: 50%;
 
   background-color: transparent;
@@ -88,7 +88,7 @@
   width: 9px;
   height: 9px;
 
-  border: 1px solid $basic-gray;
+  border: 1px solid $basic-grey;
   border-left: none;
   border-bottom: none;
 
@@ -96,7 +96,7 @@
 }
 
 .gallery__button:disabled::after {
-  border-color: $special-gray;
+  border-color: $special-grey;
 }
 
 .gallery__button::before {
@@ -105,13 +105,13 @@
   width: 19px;
   height: 1px;
 
-  background-color: $basic-gray;
+  background-color: $basic-grey;
 
   transform: translateY(-50%);
 }
 
 .gallery__button:disabled::before {
-  background-color: $special-gray;
+  background-color: $special-grey;
 }
 
 .gallery__big-img,

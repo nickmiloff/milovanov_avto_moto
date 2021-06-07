@@ -20,12 +20,17 @@
 
   cursor: pointer;
 
-  &:hover {
+  &:not(:disabled):hover {
     background-color: $special-red;
   }
 
-  &:active {
+  &:not(:disabled):active {
     opacity: 0.9;
+  }
+
+  &:disabled {
+    filter: grayscale(1) opacity(0.8);
+    cursor: not-allowed;
   }
 }
 

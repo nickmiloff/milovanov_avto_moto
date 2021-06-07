@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -21,4 +25,8 @@
   width: 1280px;
   margin: 0 auto;
   padding: 0 49px;
+}
+
+.svg-template {
+  display: none;
 }
