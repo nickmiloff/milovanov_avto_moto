@@ -8,8 +8,8 @@ import Characteristics from '../characteristics/characteristics';
 import Reviews from '../reviews/reviews';
 import Contacts from '../contacts/contacts';
 
-import reducer from './reducer';
-import * as actions from './actions';
+import reducer from './reducer/reducer';
+import * as actions from './reducer/actions';
 
 import {offerImages, offerDescription, offerСharacteristics, offerReviews} from '../../mock';
 
