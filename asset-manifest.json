@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.33b8e18f.chunk.css",
-    "main.js": "/static/js/main.8e5424a9.chunk.js",
-    "main.js.map": "/static/js/main.8e5424a9.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a73fae50.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a73fae50.js.map",
-    "static/js/2.07c7c48e.chunk.js": "/static/js/2.07c7c48e.chunk.js",
-    "static/js/2.07c7c48e.chunk.js.map": "/static/js/2.07c7c48e.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.33b8e18f.chunk.css.map": "/static/css/main.33b8e18f.chunk.css.map",
-    "static/js/2.07c7c48e.chunk.js.LICENSE.txt": "/static/js/2.07c7c48e.chunk.js.LICENSE.txt",
-    "static/media/style.scss": "/static/media/stars.65421a20.svg",
-    "static/media/logo.28d1aa68.svg": "/static/media/logo.28d1aa68.svg"
+    "main.css": "/milovanov_avto_moto/static/css/main.9c501181.chunk.css",
+    "main.js": "/milovanov_avto_moto/static/js/main.8e5424a9.chunk.js",
+    "main.js.map": "/milovanov_avto_moto/static/js/main.8e5424a9.chunk.js.map",
+    "runtime-main.js": "/milovanov_avto_moto/static/js/runtime-main.f94de84a.js",
+    "runtime-main.js.map": "/milovanov_avto_moto/static/js/runtime-main.f94de84a.js.map",
+    "static/js/2.07c7c48e.chunk.js": "/milovanov_avto_moto/static/js/2.07c7c48e.chunk.js",
+    "static/js/2.07c7c48e.chunk.js.map": "/milovanov_avto_moto/static/js/2.07c7c48e.chunk.js.map",
+    "index.html": "/milovanov_avto_moto/index.html",
+    "static/css/main.9c501181.chunk.css.map": "/milovanov_avto_moto/static/css/main.9c501181.chunk.css.map",
+    "static/js/2.07c7c48e.chunk.js.LICENSE.txt": "/milovanov_avto_moto/static/js/2.07c7c48e.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/milovanov_avto_moto/static/media/stars.65421a20.svg",
+    "static/media/logo.28d1aa68.svg": "/milovanov_avto_moto/static/media/logo.28d1aa68.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a73fae50.js",
+    "static/js/runtime-main.f94de84a.js",
     "static/js/2.07c7c48e.chunk.js",
-    "static/css/main.33b8e18f.chunk.css",
+    "static/css/main.9c501181.chunk.css",
     "static/js/main.8e5424a9.chunk.js"
   ]
 }
