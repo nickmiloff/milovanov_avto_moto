@@ -39,9 +39,8 @@
 
 a.contacts__value {
   display: block;
+  width: max-content;
   text-decoration: none;
-
-  cursor: help;
 
   &:hover {
     color: $basic-red;

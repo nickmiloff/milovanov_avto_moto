@@ -25,6 +25,10 @@ body {
   width: 1280px;
   margin: 0 auto;
   padding: 0 49px;
+
+  @media (max-width: $min-width) {
+    width: 100%;
+  }
 }
 
 .svg-template {

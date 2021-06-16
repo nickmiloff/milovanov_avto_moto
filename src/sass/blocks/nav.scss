@@ -1,6 +1,8 @@
 .nav__list {
   display: flex;
-  gap: 68px;
+  flex-wrap: wrap;
+  column-gap: 68px;
+  row-gap: 20px;
 
   list-style: none;
 }
@@ -26,6 +28,5 @@
 }
 
 .nav--secondary .nav__list {
-  gap: unset;
-  justify-content: space-between;
+  column-gap: 66px;
 }
