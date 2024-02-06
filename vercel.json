@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/telegram",
+      "destination": "https://sfrolov.tech:8090/create"
+    }
+  ]
+}
